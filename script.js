@@ -1,3 +1,6 @@
+const postTitle = document.getElementById("post-title")
+const postBody = document.getElementById("post-body")
+
 let postsArr = []
 
 function displayPosts() {
@@ -21,11 +24,9 @@ fetch("https://apis.scrimba.com/jsonplaceholder/posts")
 
 document.getElementById("new-post").addEventListener("submit", function(e) {
   e.preventDefault()
-  const postTitle = document.getElementById("post-title").value
-  const postBody = document.getElementById("post-body").value
   const data = {
-      title: postTitle,
-      body: postBody
+      title: postTitle.value,
+      body: postBody.value
   }
   
   const options = {
@@ -41,5 +42,7 @@ document.getElementById("new-post").addEventListener("submit", function(e) {
       .then(post => {
         postsArr.unshift(post)
         displayPosts()
+        postTitle.value = ""
+        postBody.value = ""
       })
 })
