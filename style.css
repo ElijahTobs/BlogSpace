@@ -1,7 +1,8 @@
 body {
   font-family: 'Karla', sans-serif;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  /* width: 50%; */
 }
 
 nav {
@@ -10,8 +11,10 @@ nav {
   height: 30px;
   display: flex;
   align-items: center;
+  justify-content: center;
   position: fixed;
   width: 100%;
+  /* margin-bottom: 80px; */
 }
 
 nav > h3 {
@@ -23,9 +26,16 @@ nav > h3 {
 }
 
 form {
+  width: 40%;
   padding: 60px 10px 10px;
   display: grid;
   background-color: lightblue;
+}
+
+form,
+#blog-list {
+  width: 50%;
+  margin: auto;
 }
 
 input#post-title, textarea#post-body {
