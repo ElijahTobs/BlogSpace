@@ -14,4 +14,4 @@ Here are some of it's features:
 
 <h2> 🛠️ Contributions </h2>
 
-Information about contributing to this can be found in the [CONTRIBUTING](#)
+Information about contributing to this can be found in the [CONTRIBUTING](https://github.com/ElijahTobs/BlogSpace/blob/development/CONTRIBUTING.md)
